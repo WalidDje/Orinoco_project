@@ -32,11 +32,6 @@ function checkFormValidation(form) {
 
     for (let input of inputs) {
         if (input.value == '') errorCount ++;
-
-        if(input.name == 'email'){
-            errorCount ++;
-        }
-
     }
         form.classList.add('was-validated');
 
