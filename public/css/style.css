@@ -1,0 +1,86 @@
+.titre {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    background-color: rgb(139, 139, 139);
+    color: white;
+    margin-bottom: 0;
+}
+.img-fluid {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.p-2 {
+    border-radius: 10px;
+    background-color: rgb(214, 214, 214);
+}
+.navbar{
+    padding:0;
+    justify-content: space-around;
+}
+.buttons-product{
+    width: 90%;
+
+}
+.Comm-save {
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    color: rgb(233, 233, 233);
+    border-radius: 20px;
+    margin: 2rem;
+    background-color: rgb(127, 146, 133);
+}
+.card-img-top{
+    width: 70%;
+    margin: auto;
+}
+.vide-retour{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+.description, .image-produit{
+    text-align: center;
+}
+#vernis-select{
+    margin-bottom: 20px;
+}
+.footer-bot{
+    background-color: rgb(58, 58, 68);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: rgb(212, 212, 212);
+    margin: 5px;
+}
+.burger{
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    left: 1rem;
+}
+@media screen and (max-width:991px) {
+    .burger{
+        display: block;
+        padding: 1rem;
+    }
+    .img-fluid{
+        width: 80%;
+    }
+    .buttons-product{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .card-img-top{
+        width: 100%;
+    }
+}

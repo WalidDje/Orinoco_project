@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"/>
+    <link rel="stylesheet" href="public/css/style.css" />
+
+    <title>Produit</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container px-4 px-lg-5">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Catalogue</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex">
+            <a class="btn btn-outline-dark" href="panier.html">
+              <i class="bi-cart-fill me-1"></i>
+              Panier
+            </a>
+          </form>
+        </div>
+      </div>
+      <a class="nav-link toggle" role="button" data-toggle="dropdown">
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="index.html">Catalogue</a>
+        <a class="dropdown-item" href="panier.html">Panier</a>
+      </div>
+    </nav>
+
+    <header class="bg-dark py-5">
+      <div class="container px-2 px-lg-3 my-3">
+        <div class="text-center text-white">
+          <h1 class="display-4 fw-bolder">Orinoco</h1>
+          <p class="lead fw-normal text-white-50 mb-0">
+            Bienvenue au catalogue Orinoco
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <p class="titre"></p>
+      <img class="image-produit img-fluid" src="" />
+      <div class="p-2">
+        <p class="description"></p>
+        <label for="pet-select">Choisissez une couleur:</label>
+        <select name="vernis" id="vernis-select">
+          <option value="choix-couleur">--Choisissez une couleur--</option>
+          <option value="green">Vert</option>
+          <option value="blue">Bleu</option>
+          <option value="grey">Gris</option>
+          <option value="orange">Orange</option>
+        </select>
+        <div class="d-flex justify-content-between items-center">
+          <p>Prix : <strong class="prix"></strong></p>
+          <button class="btn btn-success add-to-cart">Commander</button>
+          <a class="btn btn-primary" href="index.html">Retour à la liste</a>
+          <a class="btn btn-info" href="panier.html">Voir mon panier</a>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-bot">
+        <p>Orinoco copyright @ 2021 Tout droits réservés</p>
+      </div>
+    </footer>
+
+    <!-- Script JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="public/js/functions.js"></script>
+    <script src="public/js/product.js"></script>
+  </body>
+</html>

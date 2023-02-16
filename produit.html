@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="public/css/style.css" />
+
+        <title>Produit</title>
+    </head>
+
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="index.html">Orinoco</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Catalogue</a></li>
+                            <li class="nav-item"><a class="nav-link" href="panier.html">Panier</a></li>
+                            <li class="nav-item dropdown">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Page Content-->
+            <section class="py-5">
+                <div class="container px-2 my-2">
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-lg-6">
+                            <div class="text-center mb-5">
+                                <h1 class="titre"></h1>
+                                <div class="row gx-5">
+                                    <img class="image-produit img-fluid" src="" />
+                                    <p class="lead fw-normal text-muted mb-0 description"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="buttons-product px-5 py-2">
+                <label for="pet-select">Choisissez une couleur:</label>
+                <select name="vernis" id="vernis-select">
+                    <option value="choix-couleur">--Choisissez une couleur--</option>
+                        <option value="green">Vert</option>
+                        <option value="blue">Bleu</option>
+                        <option value="grey">Gris</option>
+                        <option value="orange">Orange</option>
+                </select>
+
+                <p>Prix : <strong class="prix"></strong></p>
+                <div class="d-flex justify-content-between items-center">
+                <button class="btn btn-success add-to-cart">Commander</button>
+                    <a class="btn btn-primary" href="index.html">Retour à la liste</a>
+                    <a class="btn btn-info" href="panier.html">Voir mon panier</a>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Orinoco 2021</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="#!">Privacy</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="public/js/functions.js"></script>
+        <script src="public/js/product.js"></script>
+    </body>
+</html>

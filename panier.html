@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="public/css/style.css" />
+    <title>Panier</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container px-5">
+          <a class="navbar-brand" href="index.html">Orinoco</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item"><a class="nav-link" href="index.html">Catalogue</a></li>
+                  <li class="nav-item"><a class="nav-link" href="panier.html">Panier</a></li>
+                  <li class="nav-item dropdown">
+                  </li>
+              </ul>
+          </div>
+      </div>
+    </nav>
+
+    <main class="container">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Photo</th>
+            <th>Article</th>
+            <th>Prix</th>
+            <th>Quantité</th>
+          </tr>
+        </thead>
+        <tbody id="cart-tablebody"></tbody>
+      </table>
+
+      <p>Sous total : <span class="subtotal"></span>€</p>
+
+      <section class="row vide-retour">
+        <button class="btn btn-warning clear-cart col-4">
+          Vider mon panier
+        </button>
+          <a class="btn btn-primary col-4" href="index.html">Retour à la liste</a>
+      </section>
+
+      <section class="post-info">
+        <form class="form-group needs-validation" id="checkout" novalidate>
+          <div>
+            <label for="lastName">Nom : </label>
+            <input type="text" class="form-control" name="lastName" id="lastName" required>
+            <div class="invalid-feedback"> Veuillez rensigner votre nom. </div>
+          </div>
+
+          <div>
+            <label for="firstName">Prénom : </label>
+            <input type="text" class="form-control" name="firstName" id="firstName" required>
+            <div class="invalid-feedback"> Veuillez rensigner votre prénom. </div>
+          </div>
+
+          <div>
+            <label for="Adress">Adresse : </label>
+            <input type="text" class="form-control" name="address" id="Adress" required>
+            <div class="invalid-feedback"> Veuillez rensigner votre adresse. </div>
+          </div>
+
+          <div>
+            <label for="City">Ville : </label>
+            <input type="text" class="form-control" name="city" id="City" required>
+            <div class="invalid-feedback"> Veuillez rensigner votre ville. </div>
+          </div>
+
+          <div>
+            <label for="Email">Email : </label>
+            <input type="email" class="form-control" name="email" id="Email" required>
+            <div class="invalid-feedback"> Veuillez rensigner votre email. </div>
+          </div>
+          <hr>
+          <div class="text-center">
+            <button type="reset" class="btn btn-danger col-4">Effacer</button>
+            <button type="submit" class="btn btn-success confirm-command col-4">Passer la commande</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-bot">
+        <p> Orinoco copyright @ 2021 Tout droits réservés </p>
+      </div>
+    </footer>
+    
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Scripts-->
+    <script src="public/js/functions.js"></script>
+    <script src="public/js/cart.js"></script>
+  </body>
+</html>
